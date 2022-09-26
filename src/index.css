@@ -1,0 +1,308 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root{
+  --font: 'Roboto', sans-serif 
+  /* 
+  'Antonio', sans-serif
+  'Bebas Neue', cursive
+  'Bitter', serif
+  'Crimson Text', serif
+  'Montserrat', sans-serif
+  'Raleway', sans-serif
+  'Roboto', sans-serif 
+  'mascot-mvb-rough-2', sans-serif
+
+*/
+}
+
+/* Styling af nav */
+
+.header{
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  transition: 0.3s ease-in;
+}
+
+.header-bg {
+  background-color: #252525;
+}
+
+.header a{
+  padding: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+.header a.active{
+  border: 1.5px solid white;
+  border-radius: 4px;
+}
+
+.headerItems{
+  margin: 0 20px;
+
+}
+
+/* styling af forsiden */
+
+.heroimg{
+  background-image:url(/front-scaled.jpg);
+  background-size: cover ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+}
+
+.heroimgtop{
+  min-width: 100%;
+  min-height: 100vh;
+  background-color: rgb(66, 66, 103,0.45);
+}
+
+.heroimgtop h1{
+  margin: 0;
+  padding-top: 12vw;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+.typeWriter{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.typeWriter > p{
+  margin: 0;
+  padding-right: 8px;
+  color: white;
+}
+
+.text{
+display: none;
+}
+
+.fixed{
+  display: block;
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.portfolio{
+  padding-top: 150px;
+}
+
+.portfolio h1{
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.grid-container{
+  display: grid;
+  justify-content: center;
+}
+
+.grid-container article{
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.grid-container article h2{
+  margin-top: 0;
+}
+
+.grid-container article p{
+  font-family: var(--font);
+  font-size: 20px;
+  text-transform: none;
+  margin:20px 20px 0px 0;
+  line-height: 30px;
+}
+
+#tags{
+  margin-top: 25px;
+  color: #b29c82;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.grid-container article button{
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: #b29c82;
+  padding: 10px 20px;
+  border: #b29c82;
+  border-radius: 3px 3px 3px 3px;
+}
+
+.grid-container article button a{
+  color: white;
+  text-decoration: none;
+}
+
+.grid-item1, .grid-item4, .grid-item5 , .grid-item8{
+  display: block;
+  width:100%;
+  text-transform: uppercase;
+  padding: 60px 30px 0 100px;
+}
+
+.grid-item5 #tags{
+  margin-top: 25px;
+}
+
+.grid-item4, .grid-item8{
+  padding-right: 100px;
+}
+
+.grid-item2, .grid-item3, .grid-item6, .grid-item7, .grid-item10, .grid-item11{
+  display: block;
+  padding: 30px 100px 30px 30px;
+}
+
+.grid-item2 img, .grid-item3 img, .grid-item6 img{
+  width: 600px;
+  height: 400px;
+}
+
+.grid-item3, .grid-item7, .grid-item11, .grid-item15{
+  order: 1;
+  padding-right: 0px;
+  padding-left: 150px;
+}
+
+.grid-item4, .grid-item8, .grid-item12, .grid-item16{
+  order: 2;
+}
+
+
+/* Her starter styling af om os*/
+.line{
+  width: 95%;
+  border-bottom: 1.5px dashed #252525;
+  margin: 25px auto 75px auto;
+}
+
+.om-mig{
+  margin: 0 auto 50px auto;
+  width: 100%;
+  background-color: rgb(240, 240, 240);
+  display: flex;
+}
+
+.om-mig-tekst{
+  display: block;
+  justify-self: flex-start;
+  color: black;
+  width: 100%;
+  padding: 50px 50px 0 50px;
+}
+
+.om-mig-tekst h1{
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.om-mig-tekst p{
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.om-mig-img img{
+  display: block;
+  height: 600px;
+  padding: 50px;
+  justify-self: flex-end;
+}
+
+
+/* Styling af footer */
+.footer{
+  background-color: #252525;
+  width: 100%;
+  padding-top: 50px;
+  color: white;
+}
+
+.footer-content{
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1.5px dashed white;
+  padding-bottom: 50px;
+}
+
+.footer h2{
+  text-transform: uppercase;
+}
+
+.SoMe{
+  padding-left: 20vw;
+  text-align: center;
+}
+
+.Kontakt{
+  padding-right: 20vw;
+}
+
+.SoMe a img{
+  width: 40px;
+  height: 40px;
+  padding:0 10px;
+}
+
+.Kontakt ul{
+  list-style: none;
+  padding: 0;
+}
+
+.Kontakt ul li{
+  padding: 5px 0;
+  font-size: 20px;
+  font-family: var(--font);
+}
+
+.Kontakt a{
+  text-decoration: none;
+  color: white;
+  font-family: var(--font);
+}
+
+.footer p{
+  text-align: center;
+  padding: 30px 0;
+  margin: 0;
+  font-size: 16px;
+}
